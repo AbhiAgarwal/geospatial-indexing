@@ -1,15 +1,22 @@
 ###
+# config
+###
+cmake_minimum_required(VERSION 2.8.1)
+cmake_policy(SET CMP0042 NEW)
+
+project(geospatical CXX)
+
+###
 # compilation options
 ###
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-
+set(CPP_REDIS_INCLUDES ${PROJECT_SOURCE_DIR}/includes/cpp_redis)
 
 ###
 # includes
 ###
-include_directories(${PROJECT_SOURCE_DIR}/includes
-                    ${CPP_REDIS_INCLUDES})
 
+add_subdirectory(${CPP_REDIS_INCLUDES})
 
 ###
 # executable
