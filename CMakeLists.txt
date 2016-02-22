@@ -18,6 +18,8 @@ set(CPP_REDIS_INCLUDES ${PROJECT_SOURCE_DIR}/includes/cpp_redis)
 
 add_subdirectory(${CPP_REDIS_INCLUDES})
 
+include_directories(${CPP_REDIS_INCLUDES}/includes ${CPP_REDIS_INCLUDES})
+
 ###
 # executable
 ###
