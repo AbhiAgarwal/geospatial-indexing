@@ -1,13 +1,7 @@
 #include <cpp_redis/cpp_redis>
 
-#include <algorithm>
-#include <iostream>
-#include <cstring>
-#include <stdio.h>
-#include <string.h>
-#include <vector>
 #include <signal.h>
-using namespace std;
+#include <iostream>
 
 volatile std::atomic_bool should_exit(false);
 cpp_redis::redis_client client;
@@ -18,8 +12,21 @@ sigint_handler(int) {
     client.disconnect();
 }
 
-int main(int argc, char const *argv[])
-{
-    printf("X");
+int
+main(void) {
+    client.set_disconnection_handler([] (cpp_redis::redis_client&) {
+        std::cout << "client disconnected (disconnection handler)" << std::endl;
+        should_exit = true;
+    });
+
+    client.connect();
+
+    client.send({"GET", "hello"}, [] (cpp_redis::reply& reply) {
+        std::cout << reply.as_string() << std::endl;
+    });
+
+    signal(SIGINT, &sigint_handler);
+    while (not should_exit);
+
     return 0;
 }
