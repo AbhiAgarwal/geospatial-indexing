@@ -35,3 +35,6 @@ Makefile
 cmake_install.cmake
 install_manifest.txt
 target
+
+# Redis
+redis-unstable
