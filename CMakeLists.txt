@@ -9,7 +9,7 @@ project(geospatical CXX)
 ###
 # compilation options
 ###
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 set(CPP_REDIS_INCLUDES ${PROJECT_SOURCE_DIR}/includes/cpp_redis)
 
 ###
