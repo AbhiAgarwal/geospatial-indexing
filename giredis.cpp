@@ -11,8 +11,20 @@ void sigint_handler(int) {
     client.disconnect();
 }
 
-void write_location() {
-    client.send({"GEOADD", "nyc2", "40.747533", "-73.9454966", "lic market"}, [] (cpp_redis::reply& reply) {
+void geoadd(std::string city, std::string latitude, std::string longitude, std::string area) {
+    client.send({"GEOADD", city, latitude, longitude, area}, [] (cpp_redis::reply& reply) {
+        std::cout << reply.as_string() << std::endl;
+    });
+}
+
+void geodist(std::string city, std::string location_one, std::string location_two) {
+    client.send({"GEODIST", city, location_one, location_two}, [] (cpp_redis::reply& reply) {
+        std::cout << reply.as_string() << std::endl;
+    });
+}
+
+void geohash(std::string city, std::string location_one) {
+    client.send({"GEOHASH", city, location_one}, [] (cpp_redis::reply& reply) {
         std::cout << reply.as_string() << std::endl;
     });
 }
@@ -24,8 +36,6 @@ int main(void) {
     });
 
     client.connect();
-
-    write_location();
 
     signal(SIGINT, &sigint_handler);
     while (not should_exit);
