@@ -5,6 +5,7 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <regex>
 
 volatile std::atomic_bool should_exit(false);
 cpp_redis::redis_client client;
@@ -14,9 +15,17 @@ void sigint_handler(int) {
     client.disconnect();
 }
 
-void geoadd(const std::string& city, const std::string& latitude, const std::string& longitude, const std::string& area) {
-    client.send({"GEOADD", city, latitude, longitude, area}, [] (auto reply) {
-        std::cout << reply.as_string() << std::endl;
+struct GeoData {
+    std::string coord1;
+    std::string coord2;
+    std::string name;
+};
+
+void geoadd(const std::string& city, GeoData& geo) {
+    client.send({"GEOADD", city, geo.coord1, geo.coord2, geo.name}, [] (auto reply) {
+        if (!reply.as_string().empty()) {
+            std::cout << reply.as_string() << std::endl;
+        }
     });
 }
 
@@ -32,6 +41,13 @@ void geohash(const std::string& city, const std::string& location_one) {
     });
 }
 
+GeoData ParseData(const std::string& str) {
+    const auto regex = std::regex("^(\\-?\\d+(\\.\\d+)?),\\s*(\\-?\\d+(\\.\\d+)?),(.*)$");
+    auto matches = std::smatch();   
+    std::regex_match(str, matches, regex);    
+    return { matches[1].str(), matches[3].str(), matches[5].str() };
+}
+
 void inputTestData(const std::string& fileName) {
     std::string buffer;
     std::ifstream file(fileName);
@@ -42,14 +58,8 @@ void inputTestData(const std::string& fileName) {
     std::string key = buffer;
 
     while (std::getline(file, buffer)) {
-        std::stringstream ss(buffer);
-        std::string item;
-
-        std::vector<std::string> tokens;
-        while (std::getline(ss, item, ',')) {
-            tokens.push_back(item);
-        }
-        geoadd(key, tokens[0], tokens[1], tokens[2]);
+        GeoData currentLineData = ParseData(buffer);
+        geoadd(key, currentLineData);
     }
 }
 
