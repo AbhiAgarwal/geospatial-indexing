@@ -2,6 +2,9 @@
 
 #include <csignal>
 #include <iostream>
+#include <string>
+#include <fstream>
+#include <sstream>
 
 volatile std::atomic_bool should_exit(false);
 cpp_redis::redis_client client;
@@ -29,9 +32,25 @@ void geohash(const std::string& city, const std::string& location_one) {
     });
 }
 
-void inputTestData() {
-    geoadd("nyc", "40.7362722", "-73.9783613", "apartment");
-    geoadd("nyc", "40.7475228", "-73.945493", "lic market");
+void inputTestData(const std::string& fileName) {
+    std::string buffer;
+    std::ifstream file(fileName);
+    
+    if (!file.good()) return;
+
+    std::getline(file, buffer);
+    std::string key = buffer;
+
+    while (std::getline(file, buffer)) {
+        std::stringstream ss(buffer);
+        std::string item;
+
+        std::vector<std::string> tokens;
+        while (std::getline(ss, item, ',')) {
+            tokens.push_back(item);
+        }
+        geoadd(key, tokens[0], tokens[1], tokens[2]);
+    }
 }
 
 int main() {
@@ -42,7 +61,7 @@ int main() {
 
     client.connect();
 
-    inputTestData();
+    inputTestData("test_data/nyu.txt");
 
     signal(SIGINT, &sigint_handler);
     while (not should_exit);

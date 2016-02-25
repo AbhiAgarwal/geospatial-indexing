@@ -1,0 +1,129 @@
+nyu
+40.72873,-73.997329,1 Washington Square Village
+40.729958,-73.992223,10 Astor Place
+40.729347,-73.994987,10 Washington Place
+40.737673,-73.992925,110 Fifth Avenue
+40.7339096,-73.9897254,145 4th Avenue, Touro
+40.6940181,-73.98472101,15 MetroTech Center
+40.73162,-73.995515,16 East 8th Street, Apartments
+40.731291,-73.994958,19 University Place
+40.731861,-73.99763,19 Washington Square North
+40.729,-73.9951,19 West 4th Street, 8 Washington Place
+40.7263885,-73.997077,194 Mercer Street
+40.7264526,-73.9970238,196 Mercer Street
+40.69337616,-73.98564982,2 MetroTech Center
+40.7284,-73.9965,2 Washington Square Village
+40.731995,-73.998097,22 Washington Square North
+40.7296099,-73.9954183,240 Greene Street, 31 West 4th Street
+40.7297661,-73.995284,244 Greene Street, 21 Washington Place
+40.7291,-73.9954,25 West 4th Street
+40.72982,-73.994325,285 Mercer Street
+40.732194,-73.998585,29 Washington Square West
+40.7279,-73.998,3 Washington Square Village
+40.731291,-73.999529,37 Washington Square West
+40.7275,-73.9973,4 Washington Square North
+40.7284481,-73.9925457,411 Lafayette
+40.729397,-73.994486,5 Washington Place
+40.731192,-73.995816,5 Washington Square North
+40.7289276,-73.9981908,547 Laguardia Place
+40.7291803,-73.9979283,561 LaGuardia Place
+40.692012,-73.991848,67 Livingston Street Residence Hall
+40.734389,-73.993746,7 East 12th St.
+40.7291592,-73.9936102,719 Broadway
+40.729365,-73.9933179,726 Broadway
+40.7299,-73.9962,80 Washington Square East Galleries
+40.7337949,-73.990958,838 Broadway
+40.738414,-73.989402,890 Broadway
+40.7336853,-73.99279,95 University Place
+40.7277023,-73.9932701,Academic Support Center (in renovations until spring 2016)
+40.730125,-73.989192,Alumni Hall
+40.737771,-73.978436,Arnold and Marie Schartz Hall of Dental Sciences
+40.7279671,-73.9913784,Arthur L. Carter Journalism Institute
+40.7298029,-73.98797,Barney Building
+40.738669,-73.977647,Basic Science Building
+40.729649,-73.997018,Bobst Library
+40.7321594,-73.9920134,Brittany Residence Hall
+40.733307,-73.994615,Bronfman Center
+40.720835,-73.99734,Broom Street Residence
+40.7299642,-73.9956655,Brown Building
+40.7311679,-73.994435,Cantor Film Center
+40.736159,-73.991042,Carlyle Court
+40.734879,-73.995835,Casa Italiana Zerilli-Marimo
+40.729958,-73.994496,Center for Genomics and Systems Biology
+40.725828,-73.997576,Coles Sports and Recreation Center
+40.7275803,-73.9915101,Cooper Square
+40.73346,-73.986914,Coral Towers
+40.7303109,-73.9999193,D Agostino Hall
+40.7314806,-73.9957293,Deutsches House
+40.694623,-73.985699,Dibner Building
+40.729482,-73.995575,East Building
+40.7294,-73.9959,Education Building
+40.7322736,-73.9889169,Founder Hall (12th Street Residence Hall)
+40.730157,-73.999175,Furman Hall
+40.7290143,-73.9937154,Gallatin School of Individual Study
+40.731726,-73.996503,Glucksman Ireland House
+40.731231,-73.995906,Graduate School of Arts and Science
+40.739369,-73.983125,Gramercy Green
+40.731311,-74.00822,Greenwich Hotel
+40.73027,-73.995686,Grey Art Gallery
+40.731664,-73.99957,Hayden Residence Hall
+40.741071,-73.976811,Health Sciences Bookstore
+40.7316764,-73.9962537,Institute of French Studies
+40.7763075,-73.9641689,James B. Duke House - Institute of Fine Arts
+40.7290941,-73.9959767,Kaufman Management Center
+40.7301,-73.995,Kimball Hall
+40.730102,-73.997726,Kimmel Center for University Life
+40.7304949,-73.998471,King Juan Carlos I Center
+40.731378,-73.9954851,La Maison Francaise
+40.717079,-74.001718,Lafayette Residence Hall
+40.733856,-73.951149,Leslie Entrepreneurs Lab
+40.7344421,-73.9979341,Lillian Vernon Creative Writers House
+40.7279034,-73.9958215,Mercer Street Residence
+40.7088972,-74.0122452,Merril Hall
+40.729092,-73.994046,Meyer Hall
+40.75435,-73.9818219,Midtown Center
+40.7278708,-73.9991039,Morton Williams Associated
+40.729661,-73.994499,NYU Card Center
+40.741632,-73.974917,NYU Langone Medical Center
+40.7089388,-74.0122184,Nichols Hall
+40.7275,-73.9973,Off-Campus Housing
+40.69508257,-73.98633118,Othmer Residence Hall
+40.733519,-73.988162,Palladium Hall
+40.729714,-73.996434,Paulette Goddard Hall
+40.7299,-73.9959,Pless Annex
+40.73,-73.996,Pless Hall
+40.729465,-73.995223,Public Safety - Administrative Office
+40.729661,-73.994499,Public Safety - Command Center
+40.7247,-73.9956,Puck Building
+40.694011,-73.986706,Rogers Hall and Jacobs Academic Building
+40.733448,-73.995334,Rubin Hall
+40.7306,-73.994791,Rufus D. Smith Hall
+40.725462,-73.991941,Second Street Residence Hall
+40.7281239,-73.9886805,Seventh Street Residence Hall
+40.7293128,-73.9964365,Shimkin Hall Jeffrey S. Gould Welcome Center
+40.728078,-73.99369,Silk Building, 14 East 4th Street
+40.7305756,-73.9956831,Silver Center for Arts and Science
+40.73082,-73.995667,Silver School of Social Work
+40.727153,-73.998145,Silver Towers, 100 Bleecker
+40.72695,-73.998542,Silver Towers, 110 Bleecker
+40.729795,-73.997684,Skirball Center for the Performing Arts
+40.775746,-73.963494,Stephen Chan House
+40.7305069,-73.9985689,The Hagop Kevorkian Center
+40.7800129,-73.960189,The Institute for the Study of the Ancient World
+40.731381,-73.988484,Third Avenue North Residence Hall
+40.7362671,-73.9963535,Thirteenth Street Residence Hall
+40.729082,-73.996321,Tisch Hall
+40.729291,-73.993671,Tisch School of the Arts
+40.730087,-73.994756,Torch Club
+40.73912,-73.978039,Twenty-sixth Street Residence
+40.738433,-73.978393,University Court
+40.7340293,-73.9889816,University Hall
+40.730538,-73.999482,Vanderbilt Hall
+40.7363165,-73.977115,Veterans Administration Hospital
+40.7287,-73.9956,Warren Weaver Hall
+40.7332358,-73.9890676,Wasserman Center for Career Development
+40.730272,-73.995124,Waverly Building
+40.730945,-73.994805,Weinstein Residence Hall
+40.738123,-73.978091,Weissman Building
+40.7124423,-74.0090082,Woolworth Building
+40.69431858,-73.98487061,Wunsch Building
